@@ -32,6 +32,9 @@ Then, with your apache ssl module enabled, include ssl certificate (localhost.cr
 
 ```
 <VirtualHost *:443>
+    ServerName localhost
+    DocumentRoot "your_localhost_doc_root"
+    
     SSLEngine on
     SSLCertificateFile "your_certPath\localhost.crt"
     SSLCertificateKeyFile "your_certPath\localhost.key"
